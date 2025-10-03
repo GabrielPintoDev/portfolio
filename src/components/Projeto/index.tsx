@@ -2,6 +2,12 @@ import Paragrafo from '../Paragrafo'
 import Titulo from '../Title'
 import { Card, LinkBotao } from './styles'
 
+export type Props = {
+  children: string
+  tipo?: 'principal' | 'secundario'
+  fontSize?: number
+}
+
 const Projeto = () => (
   <Card>
     <Titulo>Projeto Lista de tarefas</Titulo>
